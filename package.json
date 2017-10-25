@@ -1,5 +1,5 @@
 {
-  "name": "multisig-wallet-gnosis",
+  "name": "twine-multisig-wallet",
   "version": "1.0.0",
   "description": "Main module, for installing all dependencies",
   "scripts": {
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ConsenSys/MultiSigWallet.git"
+    "url": "git+https://github.com/ubiq/twine.git"
   },
-  "author": "Gnosis (https://gnosis.pm/)",
+  "author": "Ubiq Team (Based on the work done by Gnosis (https://gnosis.pm/))",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ConsenSys/MultiSigWallet/issues"
+    "url": "https://github.com/ubiq/twine/issues"
   },
-  "homepage": "https://github.com/ConsenSys/MultiSigWallet#readme",
+  "homepage": "https://github.com/ubiq/twine#readme",
   "eslintConfig": {
     "env": {
       "browser": true,

@@ -1,5 +1,5 @@
 {
-  "name": "multisigweb",
+  "name": "twineweb",
   "version": "1.0.0",
   "eslintConfig": {
     "env": {
@@ -7,7 +7,7 @@
       "node": false
     }
   },
-  "homepage": "https://wallet.gnosis.pm",
+  "homepage": "https://twine.ubiqsmart.com",
   "description": "Angular web app made for Multi Sig Wallet",
   "main": "main.js",
   "scripts": {
@@ -48,6 +48,10 @@
     {
       "name": "Giacomo Licari",
       "email": "giacomo.licari@gnosis.pm"
+    },
+    {
+      "name": "Aldo Borrero",
+      "email": "aldo@ubiqsmart.com"
     }
   ],
   "license": "ISC",
@@ -81,6 +85,7 @@
     "grunt-bower-bundle": "^0.1.0",
     "grunt-bower-concat": "^1.0.0",
     "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-less": "^1.4.1",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-eslint": "^19.0.0",
     "grunt-minified": "0.0.6",
@@ -95,7 +100,7 @@
     "scrypt": "*"
   },
   "build": {
-    "appId": "pm.gnosis.wallet",
+    "appId": "com.ubiqsmart.twine.wallet",
     "linux": {
       "target": [
         "deb"
