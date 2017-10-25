@@ -54,9 +54,9 @@
             var factoryAddress;
             var alertNode;
 
-            if (data.chain == 'kovan') {
-              factoryAddress = $scope.config.walletFactoryAddresses['kovan'];
-              alertNode = $scope.config.alertNodes['kovan'];
+            if (data.chain == 'testnet') {
+              factoryAddress = $scope.config.walletFactoryAddresses['testnet'];
+              alertNode = $scope.config.alertNodes['testnet'];
             }
             else {
               factoryAddress = $scope.config.walletFactoryAddresses['mainnet'];

@@ -2,11 +2,11 @@ var txDefaultOrig =
 {
   gasLimit: 3141592,
   gasPrice: 18000000000,
-  ethereumNode: "https://mainnet.infura.io:443",
+  ethereumNode: "https://rpc1.ubiqscan.io:443",
   alertNode: {
     url : "https://alerts.gnosis.pm",
     authCode: null,
-    name: "Mainnet",
+    name: "Ubiq Net",
     managementPage: "https://alerts.gnosis.pm/api/alert/manage/?code={auth-code}",
     managementRoute: "api/alert/manage"
   },
@@ -27,84 +27,6 @@ var txDefaultOrig =
       'symbol': 'GNO',
       'decimals': 18
     },
-    {
-      'address': '0xa74476443119A942dE498590Fe1f2454d7D4aC0d',
-      'name': 'Golem',
-      'symbol': 'GNT',
-      'decimals': 18
-    },
-    {
-      'address': '0x888666CA69E0f178DED6D75b5726Cee99A87D698',
-      'name': 'Iconomi',
-      'symbol': 'ICN',
-      'decimals': 18
-    },
-    {
-      'address': '0x48c80F1f4D53D5951e5D5438B54Cba84f29F32a5',
-      'name': 'Augur',
-      'symbol': 'REP',
-      'decimals': 18
-    },
-    {
-      'address': '0xc66ea802717bfb9833400264dd12c2bceaa34a6d',
-      'name': 'Maker',
-      'symbol': 'MKR',
-      'decimals': 18
-    },
-    {
-      'address': '0xe0b7927c4af23765cb51314a0e0521a9645f0e2a',
-      'name': 'Digix Global',
-      'symbol': 'DGD',
-      'decimals': 9
-    },
-    {
-      'address': '0xAf30D2a7E90d7DC361c8C4585e9BB7D2F6f15bc7',
-      'name': 'FirstBlood',
-      'symbol': '1ST',
-      'decimals': 18
-    },
-    {
-      'address': '0x0D8775F648430679A709E98d2b0Cb6250d2887EF',
-      'name': 'Basic Attention Token',
-      'symbol': 'BAT',
-      'decimals': 18
-    },
-    {
-      'address': '0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C',
-      'name': 'Bancor Network',
-      'symbol': 'BNT',
-      'decimals': 18
-    },
-    {
-      'address': '0xaec2e87e0a235266d9c5adc9deb4b2e29b54d009',
-      'name': 'SingularDTV',
-      'symbol': 'SNGLS',
-      'decimals': 0
-    },
-    {
-      'address': '0x960b236A07cf122663c4303350609A66A7B288C0',
-      'name': 'Aragon Network',
-      'symbol': 'ANT',
-      'decimals': 18
-    },
-    {
-      'address': '0x607F4C5BB672230e8672085532f7e901544a7375',
-      'name': 'iExec RLC',
-      'symbol': 'RLC',
-      'decimals': 9
-    },
-    {
-      'address': '0xBEB9eF514a379B997e0798FDcC901Ee474B6D9A1',
-      'name': 'Melon',
-      'symbol': 'MLN',
-      'decimals': 18
-    },
-    {
-      'address': '0xb64ef51c888972c908cfacf59b47c1afbc0ab8ac',
-      'name': 'Storjcoin X',
-      'symbol': 'SJCX',
-      'decimals': 8
-    }
   ]
 };
 
@@ -115,50 +37,42 @@ if (isElectron) {
 var txDefault = {
   ethereumNodes : [
     {
-      url : "https://mainnet.infura.io:443",
-      name: "Remote Mainnet"
+      url : "https://rpc1.ubiqscan.io:443",
+      name: "Ubiq Net"
     },
     {
-      url : "https://ropsten.infura.io:443",
-      name: "Remote Ropsten"
+      url : "https://testrcp.ubiqscan.io:443",
+      name: "Test Net"
     },
     {
-      url : "https://kovan.infura.io:443",
-      name: "Remote Kovan"
-    },
-    {
-      url : "http://localhost:8545",
+      url : "http://localhost:8588",
       name: "Local node"
     }
   ],
   alertNodes: {
     'mainnet': {
-      url: 'https://alerts.gnosis.pm',
+      url: 'https://alerts.ubiqscan.io',
       authCode: null,
-      name: 'Mainnet',
-      networkId: 1,
-      managementPage: "https://alerts.gnosis.pm/api/alert/manage/?code={auth-code}"
+      name: 'Ubiq Net',
+      networkId: 88,
+      managementPage: "https://alerts.ubiqscan.io/api/alert/manage/?code={auth-code}"
     },
-    'kovan': {
-      url: 'https://testalerts.gnosis.pm',
+    'testnet': {
+      url: 'https://testalerts.ubiqscan.io',
       authCode: null,
-      name: 'Kovan',
-      networkId: 42,
-      managementPage: "https://testalerts.gnosis.pm/api/alert/manage/?code={auth-code}"
+      name: 'Test Net',
+      networkId: 9,
+      managementPage: "https://testalerts.ubiqscan.io/api/alert/manage/?code={auth-code}"
     }
   },
   walletFactoryAddresses: {
     'mainnet': {
-      name: 'Mainnet',
+      name: 'Ubiq Net',
       address: txDefaultOrig.walletFactoryAddress
     },
-    'ropsten': {
-      name: 'Ropsten',
-      address: '0x5cb85db3e237cac78cbb3fd63e84488cac5bd3dd'
-    },
-    'kovan': {
-      name: 'Kovan',
-      address: '0x6C4c60F01999408CfD872Fdcf739912509A15da5'
+    'testnet': {
+      name: 'Test Net',
+      address: txDefaultOrig.walletFactoryAddress
     },
     'privatenet': {
       name: 'Privatenet',
