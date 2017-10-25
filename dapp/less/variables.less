@@ -2,77 +2,18 @@
 // Variables
 // --------------------------------------------------
 
-//== Gnosis theme colors
-@gnosis-extreme-dark-blue:     #152630;
-@gnosis-very-dark-blue:        #182a36;
-@gnosis-dark-blue:             #1c313f;
-@gnosis-blue:                  #1f3747;
-@gnosis-light-blue:            #143e4d;
-@gnosis-very-light-blue:       #2b4c62;
-@gnosis-extreme-light-blue:    #1f7692;
-@gnosis-ultra-light-blue:      #00a6c4;
-@gnosis-light-grey:            #b3c3ce;
-
-
-// Background
-@gnosis-body-bg: @gnosis-blue;
-
-// Page header
-@gnosis-page-header-border-color:       @gnosis-light-blue;
-
-// Links & Text
-@gnosis-text-color:                     @gnosis-light-grey;
-@gnosis-link-color: @gnosis-extreme-light-blue;
-@gnosis-link-hover-color: @gnosis-ultra-light-blue;
-
-// Button
-@gnosis-btn-default-bg:                 @gnosis-light-blue;
-
-// Pagination
-@gnosis-pagination-bg:                  @gnosis-light-blue;
-@gnosis-pagination-hover-bg: @gnosis-extreme-dark-blue;
-@gnosis-pagination-active-bg: @gnosis-extreme-dark-blue;
-@gnosis-pagination-disabled-bg: @gnosis-extreme-dark-blue;
-
-// Input
-@gnosis-input-bg: @gnosis-light-blue;
-@gnosis-input-bg-disabled: @gnosis-extreme-dark-blue;
-
-// Dropdown
-@gnosis-dropdown-bg: @gnosis-very-dark-blue;
-@gnosis-dropdown-link-color:       @gnosis-link-color;
-@gnosis-dropdown-link-hover-color: @gnosis-ultra-light-blue;
-@gnosis-dropdown-link-hover-bg: @gnosis-light-blue;
-
-// Modal
-@gnosis-modal-content-bg:          @gnosis-blue;
-@gnosis-modal-header-border-color: @gnosis-light-blue;
-
-// Nav
-@gnosis-navbar-default-color:       @gnosis-light-grey;
-@gnosis-navbar-default-bg: @gnosis-very-dark-blue;
-@gnosis-navbar-default-border:      @gnosis-light-blue;
-
-// Navbar links
-@gnosis-navbar-default-link-color:            @gnosis-link-color;
-@gnosis-navbar-default-link-hover-color: @gnosis-ultra-light-blue;
-@gnosis-navbar-default-link-active-color: @gnosis-ultra-light-blue;
-
-// Panel
-@gnosis-panel-bg:                       @gnosis-blue;
-@gnosis-panel-inner-border: @gnosis-very-light-blue;
-@gnosis-panel-footer-bg: @gnosis-very-light-blue;
-@gnosis-panel-default-border: @gnosis-very-light-blue;
-@gnosis-panel-default-heading-bg: @gnosis-very-light-blue;
-@gnosis-panel-default-text:             @gnosis-light-grey;
-
-// Table
-@gnosis-table-bg:                       transparent;
-@gnosis-table-bg-accent: @gnosis-dark-blue;
-@gnosis-table-bg-hover: @gnosis-very-dark-blue;
-@gnosis-table-bg-active:                @gnosis-table-bg-hover;
-@gnosis-table-border-color: @gnosis-very-light-blue;
-
+//== Twine theme colors
+@twine-base:                     #111;
+@twine-extreme-dark-base:          darken(@twine-base, 15%); //#152630;
+@twine-very-dark-base:             darken(@twine-base, 10%); //#292b2c;
+@twine-dark-base:                  darken(@twine-base, 5%); //#1c313f;
+@twine-light-base:                 lighten(@twine-base, 5%); //#292b2c;
+@twine-very-light-base:            lighten(@twine-base, 10%); //#2b4c62;
+@twine-extreme-very-light-base:    lighten(@twine-base, 15%); //#1f7692;
+@twine-ultra-light-base:        #00ea90;
+@twine-light-grey:               #c9c9c9;
+@twine-accent:                   #00ea90;
+@twine-accent_darker:              darken(@twine-accent, 10%);
 
 //== Colors
 //
@@ -85,26 +26,84 @@
 @gray-light:             lighten(@gray-base, 46.7%); // #777
 @gray-lighter:           lighten(@gray-base, 93.5%); // #eee
 
-@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-primary:         darken(#00ea90, 6.5%); // #337ab7
 @brand-success:         #5cb85c;
 @brand-info:            #5bc0de;
 @brand-warning:         #f0ad4e;
 @brand-danger:          #d9534f;
 
+// Background
+@twine-body-bg: @twine-base;
+
+// Page header
+@twine-page-header-border-color:       @twine-light-base;
+
+// Links & Text
+@twine-text-color:                     @twine-light-grey;
+@twine-link-color:                     @twine-accent;
+@twine-link-hover-color:               @twine-accent_darker;
+
+// Button
+@twine-btn-default-bg:                 @twine-light-base;
+
+// Pagination
+@twine-pagination-bg:                  @twine-light-base;
+@twine-pagination-hover-bg: @twine-extreme-dark-base;
+@twine-pagination-active-bg: @twine-extreme-dark-base;
+@twine-pagination-disabled-bg: @twine-extreme-dark-base;
+
+// Input
+@twine-input-bg: @twine-light-base;
+@twine-input-bg-disabled: @twine-extreme-dark-base;
+
+// Dropdown
+@twine-dropdown-bg: @twine-very-dark-base;
+@twine-dropdown-link-color:       @twine-link-color;
+@twine-dropdown-link-hover-color: @twine-ultra-light-base;
+@twine-dropdown-link-hover-bg: @twine-light-base;
+
+// Modal
+@twine-modal-content-bg:          @twine-base;
+@twine-modal-header-border-color: @twine-light-base;
+
+// Nav
+@twine-navbar-default-color:       @twine-light-grey;
+@twine-navbar-default-bg:          @twine-very-dark-base;
+@twine-navbar-default-border:      @twine-light-base;
+
+// Navbar links
+@twine-navbar-default-link-color:            @twine-text-color;
+@twine-navbar-default-link-hover-color:      @twine-link-hover-color;
+@twine-navbar-default-link-active-color:     @twine-link-color;
+
+// Panel
+@twine-panel-bg:                       @twine-base;
+@twine-panel-inner-border: @twine-very-light-base;
+@twine-panel-footer-bg: @twine-very-light-base;
+@twine-panel-default-border: @twine-very-light-base;
+@twine-panel-default-heading-bg: @twine-very-light-base;
+@twine-panel-default-text:             @twine-light-grey;
+
+// Table
+@twine-table-bg:                       transparent;
+@twine-table-bg-accent: @twine-dark-base;
+@twine-table-bg-hover: @twine-very-dark-base;
+@twine-table-bg-active:                @twine-table-bg-hover;
+@twine-table-border-color: @twine-very-light-base;
 
 //== Scaffolding
 //
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-@body-bg: @gnosis-body-bg;
+@body-bg: @twine-body-bg;
 //** Global text color on `<body>`.
-@text-color: @gnosis-text-color;
+@text-color: @twine-text-color;
 
 //** Global textual link color.
-@link-color: @gnosis-link-color;
+@link-color: @twine-link-color;
 //** Link hover color set via `darken()` function.
-@link-hover-color: @gnosis-link-hover-color;
+@link-hover-color: @twine-link-hover-color;
 //** Link hover decoration.
 @link-hover-decoration: underline;
 
@@ -198,15 +197,15 @@
 @table-condensed-cell-padding:  5px;
 
 //** Default background color used for all tables.
-@table-bg:                      @gnosis-table-bg;
+@table-bg:                      @twine-table-bg;
 //** Background color used for `.table-striped`.
-@table-bg-accent:               @gnosis-table-bg-accent;
+@table-bg-accent:               @twine-table-bg-accent;
 //** Background color used for `.table-hover`.
-@table-bg-hover:                @gnosis-table-bg-hover;
-@table-bg-active:               @gnosis-table-bg-active;
+@table-bg-hover:                @twine-table-bg-hover;
+@table-bg-active:               @twine-table-bg-active;
 
 //** Border color for table and cell borders.
-@table-border-color:            @gnosis-table-border-color;
+@table-border-color:            @twine-table-border-color;
 
 
 //== Buttons
@@ -216,7 +215,7 @@
 @btn-font-weight:                normal;
 
 @btn-default-color:              #fff;
-@btn-default-bg:                 @gnosis-btn-default-bg;
+@btn-default-bg:                 @twine-btn-default-bg;
 @btn-default-border:             darken(@btn-default-bg, 5%);
 
 @btn-primary-color:              #fff;
@@ -252,9 +251,9 @@
 //##
 
 //** `<input>` background color
-@input-bg: @gnosis-input-bg;
+@input-bg: @twine-input-bg;
 //** `<input disabled>` background color
-@input-bg-disabled:              @gnosis-input-bg-disabled;
+@input-bg-disabled:              @twine-input-bg-disabled;
 
 //** Text color for `<input>`s
 @input-color:                    #fff;
@@ -303,7 +302,7 @@
 //## Dropdown menu container and contents.
 
 //** Background for the dropdown menu.
-@dropdown-bg: @gnosis-dropdown-bg;
+@dropdown-bg: @twine-dropdown-bg;
 //** Dropdown menu `border-color`.
 @dropdown-border:                rgba(0,0,0,.15);
 //** Dropdown menu `border-color` **for IE8**.
@@ -312,11 +311,11 @@
 @dropdown-divider-bg:            #e5e5e5;
 
 //** Dropdown link text color.
-@dropdown-link-color: @gnosis-dropdown-link-color;
+@dropdown-link-color: @twine-dropdown-link-color;
 //** Hover color for dropdown links.
-@dropdown-link-hover-color: @gnosis-dropdown-link-hover-color;
+@dropdown-link-hover-color: @twine-dropdown-link-hover-color;
 //** Hover background for dropdown links.
-@dropdown-link-hover-bg: @gnosis-dropdown-link-hover-bg;
+@dropdown-link-hover-bg: @twine-dropdown-link-hover-bg;
 
 //** Active dropdown menu item text color.
 @dropdown-link-active-color:     @component-active-color;
@@ -435,18 +434,18 @@
 @navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
 @navbar-collapse-max-height:       340px;
 
-@navbar-default-color:            @gnosis-navbar-default-color;
-@navbar-default-bg:               @gnosis-navbar-default-bg;
-@navbar-default-border:           @gnosis-navbar-default-border;
+@navbar-default-color:            @twine-navbar-default-color;
+@navbar-default-bg:               @twine-navbar-default-bg;
+@navbar-default-border:           @twine-navbar-default-border;
 
 // Navbar links
 @navbar-default-link-hover-bg:             transparent;
 @navbar-default-link-active-bg:            darken(@navbar-default-bg, 6.5%);
 @navbar-default-link-disabled-color:       #ccc;
 @navbar-default-link-disabled-bg:          transparent;
-@navbar-default-link-color:                @gnosis-navbar-default-link-color;
-@navbar-default-link-hover-color:          @gnosis-navbar-default-link-hover-color;
-@navbar-default-link-active-color:         @gnosis-navbar-default-link-active-color;
+@navbar-default-link-color:                @twine-navbar-default-link-color;
+@navbar-default-link-hover-color:          @twine-navbar-default-link-hover-color;
+@navbar-default-link-active-color:         @twine-navbar-default-link-active-color;
 
 // Navbar brand label
 @navbar-default-brand-color:               @navbar-default-link-color;
@@ -519,19 +518,19 @@
 //##
 
 @pagination-color:                     #fff;
-@pagination-bg:                        @gnosis-pagination-bg;
+@pagination-bg:                        @twine-pagination-bg;
 @pagination-border:                    darken(@pagination-bg, 5%);
 
 @pagination-hover-color:               #fff;
-@pagination-hover-bg:                  @gnosis-pagination-hover-bg;
+@pagination-hover-bg:                  @twine-pagination-hover-bg;
 @pagination-hover-border:              darken(@pagination-hover-bg, 5%);
 
 @pagination-active-color:              @gray-light;
-@pagination-active-bg:                 @gnosis-pagination-active-bg;
+@pagination-active-bg:                 @twine-pagination-active-bg;
 @pagination-active-border:             darken(@pagination-active-bg, 5%);
 
 @pagination-disabled-color:            @gray-light;
-@pagination-disabled-bg:               @gnosis-pagination-disabled-bg;
+@pagination-disabled-bg:               @twine-pagination-disabled-bg;
 @pagination-disabled-border:           darken(@pagination-disabled-bg, 5%);
 
 
@@ -668,7 +667,7 @@
 @modal-title-line-height:     @line-height-base;
 
 //** Background color of modal content area
-@modal-content-bg:                             @gnosis-modal-content-bg;
+@modal-content-bg:                             @twine-modal-content-bg;
 //** Modal content border color
 @modal-content-border-color:                   rgba(0,0,0,.2);
 //** Modal content border color **for IE8**
@@ -679,7 +678,7 @@
 //** Modal backdrop opacity
 @modal-backdrop-opacity:      .5;
 //** Modal header border color
-@modal-header-border-color:   @gnosis-modal-header-border-color;
+@modal-header-border-color:   @twine-modal-header-border-color;
 //** Modal footer border color
 @modal-footer-border-color:   @modal-header-border-color;
 
@@ -774,19 +773,19 @@
 //
 //##
 
-@panel-bg:                    @gnosis-panel-bg;
+@panel-bg:                    @twine-panel-bg;
 @panel-body-padding:          15px;
 @panel-heading-padding:       10px 15px;
 @panel-footer-padding:        @panel-heading-padding;
 @panel-border-radius:         @border-radius-base;
 
 //** Border color for elements within panels
-@panel-inner-border:          @gnosis-panel-inner-border;
-@panel-footer-bg:             @gnosis-panel-footer-bg;
+@panel-inner-border:          @twine-panel-inner-border;
+@panel-footer-bg:             @twine-panel-footer-bg;
 
-@panel-default-text:          @gnosis-panel-default-text;
-@panel-default-border:        @gnosis-panel-default-border;
-@panel-default-heading-bg:    @gnosis-panel-default-heading-bg;
+@panel-default-text:          @twine-panel-default-text;
+@panel-default-border:        @twine-panel-default-border;
+@panel-default-heading-bg:    @twine-panel-default-heading-bg;
 
 @panel-primary-text:          #fff;
 @panel-primary-border:        @brand-primary;
@@ -932,7 +931,7 @@
 //** Blockquote border color
 @blockquote-border-color:     @gray-lighter;
 //** Page header border color
-@page-header-border-color:    @gnosis-page-header-border-color;
+@page-header-border-color:    @twine-page-header-border-color;
 //** Width of horizontal description list titles
 @dl-horizontal-offset:        @component-offset-horizontal;
 //** Point at which .dl-horizontal becomes horizontal

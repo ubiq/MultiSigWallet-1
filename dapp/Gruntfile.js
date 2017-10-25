@@ -105,6 +105,16 @@ module.exports = function(grunt) {
           cmd: "run"
         }
       }
+    },
+    less: {
+      development: {
+        options: {
+          paths: ['less/']
+        },
+        files: {
+          'css/twine.css': 'less/bootstrap.less'
+        }
+      }
     }
   });
 
@@ -120,7 +130,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-eslint');
   grunt.loadNpmTasks('grunt-npm-command');
-
-  grunt.registerTask('default', ['ngtemplates', 'http-server']);
+  grunt.loadNpmTasks('grunt-contrib-less');
+  
+  grunt.registerTask('default', ['ngtemplates', 'http-server', 'watch']);
   grunt.registerTask('ledger', ['ssl-cert', 'ngtemplates', 'http-server:ssl']);
 };

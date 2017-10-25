@@ -1,9 +1,8 @@
 <!doctype html>
 <html>
   <head>
-    <title>Multisignature Wallet</title>
-    <script src="./bower_components/web3/dist/web3.js">
-      </script>
+    <title>Twine - Ubiq Multisignature Wallet</title>
+    <script src="./bower_components/web3/dist/web3.js"></script>
     <script>
       var Web3Local = Web3;
     </script>
@@ -12,12 +11,9 @@
       var isElectron = (window && window.process && window.process.type) ? true : false;
     </script>
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="any" href="./img/wallet-logo.png" />
+    <link rel="icon" type="image/png" sizes="any" href="./img/favicon.png" />
     <!-- Custom Stylesheets -->
-    <link href="./css/app.css" rel="stylesheet" type="text/css" />
-    <link href="./css/gnosis-bootstrap.css" rel="stylesheet" type="text/css" />
-    <!--<link href="./bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css" />-->
-    <link href="./css/gnosis-bootstrap-dialog.css" rel="stylesheet" type="text/css" />
+    <link href="./css/twine.css" rel="stylesheet" type="text/css" />
     <!-- 3rd party Stylesheets -->
     <link href="./bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <link href="./bower_components/SpinKit/css/spinkit.css" rel="stylesheet" type="text/css" />
@@ -63,10 +59,6 @@
     </script>
     <!-- <script src="./bower_components/entropy-collector/entropy-collector.js"></script> -->
     <script src="./bower_components/web3-provider-engine/dist/ProviderEngine.js"></script>
-    <!-- Testing -->
-    <!--
-    <script src="./ledgerwallet.js"></script>
-    -->
     <!-- App -->
     <script src="./config.js"></script>
     <script src="./app.js"></script>
@@ -140,7 +132,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="#">
-              <img src="./img/wallet-logo.svg" class="img-responsive" />
+              <img src="./img/ubiq-logo.svg" class="img-responsive" />
             </a>
         </div>
         <div class="collapse navbar-collapse" uib-collapse="navCollapsed">
