@@ -8,8 +8,7 @@ module.exports = deployer => {
     deployer.deploy(MultisigWalletFactory)
     console.log("Factory with Daily Limit deployed")
   } else if (args.length < 5) {
-    console.error("Multisig with daily limit requires to pass owner " +
-      "list, required confirmations and daily limit")
+    console.error("Multisig with daily limit requires to pass owner list, required confirmations and daily limit")
   } else if (args.length < 6) {
     deployer.deploy(MultisigWalletWithoutDailyLimit, args[3].split(","), args[4])
     console.log("Wallet deployed")

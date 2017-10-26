@@ -310,11 +310,11 @@
                 else if (block && block.hash == "0xc85d1bdaba72c05665642c468d1b480ed3fc1cb3ebf97111a1009783ebc308dc") {
                   data.chain = "testnet";
                   data.etherscan = "https://ubiqscan.io";
-                  data.walletFactoryAddress = "0xa0dbdadcbcc540be9bf4e9a812035eb1289dad73";
+                  data.walletFactoryAddress = "0x8d9102186c596ee9ae2cc49f9d8a91ffa3697221";
                 }
                 else {
                   data.chain = "privatenet";
-                  data.etherscan = "https://testnet.etherscan.io";
+                  data.etherscan = "https://ubiqscan.io";
                   data.walletFactoryAddress = "0xd79426bcee5b46fde413ededeb38364b3e666097";
                 }
 

@@ -233,7 +233,7 @@
                     Config.removeConfiguration('accounts');
                     Config.removeConfiguration('selectedAccount');
                     Web3Service.addresses = [];
-                    // setting remotenoe by default
+                    // setting remotenode by default
                     var userConfig = Config.getUserConfiguration();
                     userConfig.wallet = 'remotenode';
                     Config.setConfiguration("userConfig", JSON.stringify(userConfig));
