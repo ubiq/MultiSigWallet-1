@@ -4,10 +4,10 @@ var txDefaultOrig =
   gasPrice: 20000000000,
   ethereumNode: "https://rpc1.ubiqscan.io:443",
   alertNode: {
-    url : "https://alerts.gnosis.pm",
+    url : "https://alerts.ubiqsmart.com",
     authCode: null,
-    name: "Ubiq Net",
-    managementPage: "https://alerts.gnosis.pm/api/alert/manage/?code={auth-code}",
+    name: "Ubiq Net - Alert Node",
+    managementPage: "https://alerts.ubiqsmart.com/api/alert/manage/?code={auth-code}",
     managementRoute: "api/alert/manage"
   },
   connectionChecker:{
@@ -86,18 +86,18 @@ var txDefault = {
   ],
   alertNodes: {
     'mainnet': {
-      url: 'https://alerts.ubiqscan.io',
+      url: 'https://alerts.ubiqsmart.com',
       authCode: null,
       name: 'Ubiq Net',
       networkId: 88,
-      managementPage: "https://alerts.ubiqscan.io/api/alert/manage/?code={auth-code}"
+      managementPage: "https://alerts.ubiqsmart.com/api/alert/manage/?code={auth-code}"
     },
     'testnet': {
-      url: 'https://testalerts.ubiqscan.io',
+      url: 'https://testalerts.ubiqsmart.com',
       authCode: null,
       name: 'Test Net',
       networkId: 9,
-      managementPage: "https://testalerts.ubiqscan.io/api/alert/manage/?code={auth-code}"
+      managementPage: "https://testalerts.ubiqsmart.com/api/alert/manage/?code={auth-code}"
     }
   },
   walletFactoryAddresses: {

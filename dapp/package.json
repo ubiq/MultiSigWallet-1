@@ -71,7 +71,7 @@
     "json-rpc-error": "^2.0.0",
     "ledgerco": "^1.1.2",
     "node-hid": "^0.5.4",
-    "web3": "^0.19.0"
+    "web3": "^0.20.0"
   },
   "devDependencies": {
     "asar": "^0.13.0",
