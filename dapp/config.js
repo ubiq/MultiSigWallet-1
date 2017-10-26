@@ -81,7 +81,7 @@ var txDefault = {
     },
     {
       url : "http://localhost:8588",
-      name: "Local node"
+      name: "Local Node"
     }
   ],
   alertNodes: {
@@ -107,7 +107,7 @@ var txDefault = {
     },
     'testnet': {
       name: 'Test Net',
-      address: txDefaultOrig.walletFactoryAddress
+      address: '0x8d9102186c596ee9ae2cc49f9d8a91ffa3697221'
     },
     'privatenet': {
       name: 'Private Net',
