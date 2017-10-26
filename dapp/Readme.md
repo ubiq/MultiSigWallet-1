@@ -1,7 +1,7 @@
-Ethereum Multisignature Wallet UI
-===================
+Ubiq Multisignature Wallet UI
+=============================
 
-A web user interface for the [MultiSigWallet](https://github.com/gnosis/MultiSigWallet).
+A web user interface for the [Twine](https://github.com/ubiq/twine) project.
 
 Requirements
 -------------
